@@ -13,7 +13,6 @@ namespace IdentityServer4.Contrib.DynamoDB.Tests
     public class PersistedGrantTests
     {
         private readonly TestContext _;
-        private readonly IAmazonDynamoDB client;
 
         private readonly IPersistedGrantStore persistedGrantStore;
 
