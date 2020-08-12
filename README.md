@@ -1,3 +1,5 @@
+![tests](https://github.com/AliBazzi/IdentityServer4.Contrib.DynamoDB/workflows/tests/badge.svg)
+
 # IdentityServer4.Contrib.DynamoDB
 
 IdentityServer4.Contrib.DynamoDB is a persistence layer using [AWS DynamoDB](https://aws.amazon.com/dynamodb/) for operational data capability for Identity Server 4. Specifically, this store provides implementation for [IPersistedGrantStore](http://docs.identityserver.io/en/release/topics/deployment.html#operational-data).
