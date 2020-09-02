@@ -7,8 +7,8 @@
     <Authors>Ali Bazzi</Authors>
     <Company>Ali Bazzi</Company>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageReleaseNotes>initial release</PackageReleaseNotes>
-    <Version>1.0.0-beta1</Version>
+    <PackageReleaseNotes>fix a bug in AddOperationalStore extention method</PackageReleaseNotes>
+    <Version>1.0.0-beta2</Version>
     <PackageProjectUrl>https://github.com/AliBazzi/IdentityServer4.Contrib.DynamoDB</PackageProjectUrl>
     <PackageIconUrl>https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg</PackageIconUrl>
     <PackageIcon>icon.jpg</PackageIcon>

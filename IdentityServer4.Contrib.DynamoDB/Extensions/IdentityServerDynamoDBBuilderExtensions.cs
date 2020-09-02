@@ -21,7 +21,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (options.DynamoDBContextConfig is null)
                 options.DynamoDBContextConfig = new Amazon.DynamoDBv2.DataModel.DynamoDBContextConfig();
 
-            builder.Services.AddScoped<DynamoDBOptions>();
+            builder.Services.AddSingleton<DynamoDBOptions>(options);
             builder.Services.AddTransient<IPersistedGrantStore, PersistedGrantStore>();
             return builder;
         }
