@@ -2,10 +2,12 @@ using System;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.Runtime;
 using IdentityServer4.Stores;
 using Xunit;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
+using Moq;
+using IdentityServer4.Contrib.DynamoDB.Stores;
 
 namespace IdentityServer4.Contrib.DynamoDB.Tests
 {
@@ -20,7 +22,7 @@ namespace IdentityServer4.Contrib.DynamoDB.Tests
         {
             this._ = context;
             var client = new AmazonDynamoDBClient(awsAccessKeyId: "fakeMyKeyId", awsSecretAccessKey: "fakeSecretAccessKey", new AmazonDynamoDBConfig { ServiceURL = "http://localhost:8000" });
-            this.persistedGrantStore = new Stores.PersistedGrantStore(client, new Extensions.DynamoDBOptions { DynamoDBContextConfig = new DynamoDBContextConfig { TableNamePrefix = "local-" } }, null);
+            this.persistedGrantStore = new PersistedGrantStore(client, new Extensions.DynamoDBOptions { DynamoDBContextConfig = new DynamoDBContextConfig { TableNamePrefix = "local-" } }, Mock.Of<ILogger<PersistedGrantStore>>());
         }
 
         [Fact]
