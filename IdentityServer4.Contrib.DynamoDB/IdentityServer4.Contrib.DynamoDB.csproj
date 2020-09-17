@@ -7,8 +7,8 @@
     <Authors>Ali Bazzi</Authors>
     <Company>Ali Bazzi</Company>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageReleaseNotes>add logging for PersistedGrantStore</PackageReleaseNotes>
-    <Version>1.0.0-beta3</Version>
+    <PackageReleaseNotes>Release</PackageReleaseNotes>
+    <Version>1.0.0</Version>
     <PackageProjectUrl>https://github.com/AliBazzi/IdentityServer4.Contrib.DynamoDB</PackageProjectUrl>
     <PackageIconUrl>https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg</PackageIconUrl>
     <PackageIcon>icon.jpg</PackageIcon>
@@ -36,7 +36,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.106.36" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.*" />
     <PackageReference Include="IdentityServer4.Storage" Version="4.0.0" />
     <PackageReference Include="IdentityServer4" Version="4.0.0" />
   </ItemGroup>
